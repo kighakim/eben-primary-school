@@ -167,6 +167,13 @@ nav {
   margin: 1.5rem 0 1rem;
 }
 
+.content-section h4 {
+  color: #2a5298;
+  margin: 1.5rem 0 1rem;
+  border-bottom: 2px solid #ffd700;
+  display: inline-block;
+}
+
 .content-section ul, .content-section ol {
   margin-left: 2rem;
   margin-bottom: 1rem;
@@ -174,6 +181,12 @@ nav {
 
 .content-section li {
   margin-bottom: 0.5rem;
+}
+
+.motto {
+  font-size: 1.2rem;
+  color: #1e3c72;
+  margin-bottom: 2rem;
 }
 
 /* Contact Form */
@@ -269,6 +282,54 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.2);
 }
 
+/* NEW: Fee Table Styling */
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.9em;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.fee-table thead tr {
+  background-color: #1e3c72;
+  color: #ffffff;
+  text-align: left;
+}
+
+.fee-table th, .fee-table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+.fee-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.fee-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.checklist-grid ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.checklist-grid li {
+  background: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 5px solid #1e3c72;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
@@ -284,6 +345,10 @@ footer {
   }
 
   .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .checklist-grid {
     grid-template-columns: 1fr;
   }
 }
