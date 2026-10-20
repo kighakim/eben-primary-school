@@ -32,7 +32,9 @@ app.get('/news', async (req, res) => {
   res.render('news', { news: newsItems });
 });
 
-app.get('/contact', (req, res) => res.render('contact'));
+   app.get('/contact', (req, res) => {
+     res.render('contact', { success: req.query.success });
+   });
 
 // Handle contact form submission
 app.post('/contact', async (req, res) => {
