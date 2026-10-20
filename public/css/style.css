@@ -387,3 +387,16 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* TikTok Link Styling */
+.tiktok-link {
+  color: #ffd700; /* Matches the school's gold theme */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.tiktok-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
