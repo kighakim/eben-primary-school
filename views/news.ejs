@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<section class="page-header">
+  <h2>News & Events</h2>
+</section>
+
+<section class="content-section">
+  <% if (news.length === 0) { %>
+    <p>No news updates yet. Check back soon!</p>
+  <% } else { %>
+    <% news.forEach(item => { %>
+      <div class="news-card">
+        <h3><%= item.title %></h3>
+        <p class="date"><%= item.date.toLocaleDateString() %></p>
+        <p><%= item.content %></p>
+      </div>
+    <% }) %>
+  <% } %>
+</section>
+
+<%- include('partials/footer') %>

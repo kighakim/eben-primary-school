@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<section class="page-header">
+  <h2>Admin Panel</h2>
+</section>
+
+<section class="content-section">
+  <h3>Add News/Event</h3>
+  <form action="/admin/news" method="POST" class="contact-form">
+    <input type="text" name="title" placeholder="News Title" required>
+    <textarea name="content" placeholder="News Content" rows="5" required></textarea>
+    <button type="submit" class="btn">Publish News</button>
+  </form>
+
+  <h3>Recent Messages (<%= messages.length %>)</h3>
+  <% messages.forEach(msg => { %>
+    <div class="news-card">
+      <h4><%= msg.name %> - <%= msg.email %></h4>
+      <p class="date"><%= msg.date.toLocaleString() %></p>
+      <p><%= msg.message %></p>
+    </div>
+  <% }) %>
+</section>
+
+<%- include('partials/footer') %>
