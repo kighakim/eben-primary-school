@@ -72,19 +72,21 @@ nav {
 }
 
 /* Hero Section */
+/* Hero Section */
+/* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200');
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
-  height: 500px;
+  background-attachment: fixed;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
 }
-
 .hero-content h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
