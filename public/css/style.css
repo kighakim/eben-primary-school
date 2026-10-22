@@ -432,3 +432,18 @@ footer {
 .image-grid img:hover {
   transform: scale(1.02);
 }
+
+/* Video Player Styling */
+.video-container {
+  margin: 30px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
